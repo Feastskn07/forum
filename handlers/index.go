@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"forum/connection"
 	"forum/helpers"
+	"forum/render"
 	auth "forum/session"
 	"net/http"
 )
@@ -41,5 +42,5 @@ func Index(w http.ResponseWriter, r *http.Request) {
 
 	Data["posts"] = posts
 	helpers.SendData.Data = Data
-	render.RenderTamplate(w, "index-page.html", helpers.SendData.Data)
+	render.RenderTemplate(w, "index-page.html", helpers.SendData.Data)
 }
