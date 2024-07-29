@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"forum/config"
 	"log"
 	"net/http"
 )
