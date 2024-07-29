@@ -1,6 +1,9 @@
 package config
 
-import "net/http"
+import (
+	"forum/handlers"
+	"net/http"
+)
 
 func Routes() *http.ServeMux {
 	mux := http.NewServeMux()
