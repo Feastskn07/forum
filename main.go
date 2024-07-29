@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"forum/config"
+	"forum/connection"
 	"log"
 	"net/http"
 )
