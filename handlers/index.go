@@ -2,6 +2,9 @@ package handlers
 
 import (
 	"fmt"
+	"forum/connection"
+	"forum/helpers"
+	auth "forum/session"
 	"net/http"
 )
 
